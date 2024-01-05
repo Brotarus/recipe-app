@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Playfair+Display+SC');
+
+/* General styling */
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.App {
+  padding: 1em;
+}
+
+header {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font: 64px 'Playfair Display SC', serif;
+  text-align: center;
+}
+
+/* RecipeView styling */
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover; /* Use cover for images to maintain aspect ratio */
+}
+
+/* Zebra striping */
+tbody tr:nth-child(odd) {
+  background-color: #fff0c7;
+}
+
+/* Typography */
+thead th,
+tfoot th {
+  font-family: 'Rock Salt';
+}
+
+th {
+  letter-spacing: 2px;
+  padding: 10px;
+}
+
+td {
+  letter-spacing: 1px;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Spacing */
+table {
+  table-layout: fixed;
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content_td p {
+  max-width: 100%;
+  max-height: 100px;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+}
+
+/* Column Size for table */
+thead th:nth-child(1),
+tbody td:nth-child(1) {
+  width: 10%;
+}
+
+thead th:nth-child(2),
+tbody td:nth-child(2) {
+  width: 10%;
+}
+
+thead th:nth-child(3),
+tbody td:nth-child(3) {
+  width: 10%;
+}
+
+thead th:nth-child(4),
+tbody td:nth-child(4) {
+  width: 30%;
+}
+
+thead th:nth-child(5),
+tbody td:nth-child(5) {
+  width: 30%;
+}
+
+thead th:nth-child(6),
+tbody td:nth-child(6) {
+  width: 10%;
+}
