@@ -7,7 +7,7 @@ import RecipeData from "./RecipeData"
 function App() {
   const [recipes, setRecipes] = useState(RecipeData);
 
-  // Function to delete a recipe based on index
+  // Delete a recipe based on index
   const deleteRecipe = (index) => {
     const updatedRecipes = [...recipes];
     updatedRecipes.splice(index, 1);
@@ -17,9 +17,6 @@ function App() {
   const addRecipe = (newRecipe) => {
     setRecipes([...recipes, newRecipe]);
   };
-
-  // TODO: Add the ability for the <RecipeList /> component to list and delete an existing recipe.
-  // TODO: Add the ability for the <RecipeCreate /> component to create new recipes.
   
   return (
     <div className="App">
